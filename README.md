@@ -37,7 +37,7 @@ Within the download you'll find the following directories and files :
 
 1. **Clone the repository**
  
-   git clone https://github.com/your-username/task-management-api.git
+   git clone https://github.com/badorhassan/task-management-api.git
    cd task-management
  
 
@@ -53,14 +53,14 @@ Within the download you'll find the following directories and files :
 
 4. **Configure database settings in the .env file**
    
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=task-management
-   DB_USERNAME=root
-   DB_PASSWORD=your_password
-   JWT_SECRET=your_jwt_secret_key
-   JWT_EXPIRES_IN=60
+   - DB_CONNECTION=mysql
+   - DB_HOST=127.0.0.1
+   - DB_PORT=3306
+   - DB_DATABASE=task-management
+   - DB_USERNAME=root
+   - DB_PASSWORD=your_password
+   - JWT_SECRET=your_jwt_secret_key
+   - JWT_EXPIRES_IN=60
   
 
 5. **Generate application key**
@@ -77,7 +77,7 @@ Within the download you'll find the following directories and files :
 
 1. **Clone the repository**
   
-   git clone https://github.com/your-username/task-management.git
+   git clone https://github.com/badorhassan/task-management-api.git
    cd task-management
  
 
@@ -88,14 +88,14 @@ Within the download you'll find the following directories and files :
 
 3. **Configure database settings for Docker in the .env file**
   
-   DB_CONNECTION=mysql
-   DB_HOST=db
-   DB_PORT=3306
-   DB_DATABASE=task_management
-   DB_USERNAME=root
-   DB_PASSWORD=root
-   JWT_SECRET=your_jwt_secret_key
-   JWT_EXPIRES_IN=60
+   - DB_CONNECTION=mysql
+   - DB_HOST=db
+   - DB_PORT=3306
+   - DB_DATABASE=task_management
+   - DB_USERNAME=root
+   - DB_PASSWORD=root
+   - JWT_SECRET=your_jwt_secret_key
+   - JWT_EXPIRES_IN=60
  
 
 4. **Build and start Docker containers**
@@ -110,8 +110,6 @@ Within the download you'll find the following directories and files :
    docker-compose exec app php artisan migrate --seed
 
 
-6. **Access the application**
-   - API: [http://localhost:8000/api](http://localhost:8000/api)
 
 API Endpoints :
  <img src="https://github.com/badorhassan/task-management-api/blob/main/route list.png" />
