@@ -1,4 +1,4 @@
-version: '3'
+#version: '3'
 services:
   app:
     build:
@@ -17,10 +17,10 @@ services:
     container_name: task-management-db
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: ${DB_DATABASE}
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
-      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_DATABASE: task_management
+      MYSQL_ROOT_PASSWORD: root
+      #MYSQL_PASSWORD:
+      #MYSQL_USER: root
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
