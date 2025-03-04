@@ -114,9 +114,10 @@ Within the download you'll find the following directories and files :
 
 
 
-API Endpoints :
+## API Endpoints :
+
  <img src="https://github.com/badorhassan/task-management-api/blob/main/route list.png" />
 
 
-License
+## License
 The Laravel framework is open-sourced software licensed under the MIT license.
