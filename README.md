@@ -108,9 +108,9 @@ Within the download you'll find the following directories and files :
 
 5. **Install dependencies and set up the application**
 
-   docker-compose exec app composer install
-   docker-compose exec app php artisan key:generate
-   docker-compose exec app php artisan migrate --seed
+   - docker-compose exec app composer install
+   - docker-compose exec app php artisan key:generate
+   - docker-compose exec app php artisan migrate --seed
 
 
 
