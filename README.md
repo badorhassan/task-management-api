@@ -61,7 +61,7 @@ Within the download you'll find the following directories and files :
    - DB_PASSWORD=your_password
    - JWT_SECRET=your_jwt_secret_key
    - JWT_EXPIRES_IN=60
-  **  php artisan jwt:secrect
+ **php artisan jwt:secrect**
 
 5. **Generate application key**
    
