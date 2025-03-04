@@ -118,25 +118,5 @@ API Endpoints :
  <img src="https://github.com/badorhassan/task-management-api/blob/main/route list.png" />
 
 
-
- ###  Authentication
-•	POST /api/auth/login - Login to get JWT token
-•	POST /api/auth/logout - Logout (invalidate token)
-•	POST /api/auth/refresh - Refresh JWT token
-•	GET /api/auth/me - Get current user info
-
-### Tasks
-•	GET /api/tasks - Get all tasks (filtered by user role)
-•	POST /api/tasks - Create a new task (managers only)
-•	GET /api/tasks/{id} - Get a specific task
-•	PUT /api/tasks/{id} - Update a task (managers can update all fields, users can only update status)
-•	DELETE /api/tasks/{id} - Delete a task (managers only)
-
-### Task Dependencies
-•	POST /api/tasks/{id}/dependencies - Add a dependency to a task (managers only)
-•	DELETE /api/tasks/{id}/dependencies - Remove a dependency from a task (managers only)
-
-
-
 License
 The Laravel framework is open-sourced software licensed under the MIT license.
