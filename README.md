@@ -117,26 +117,24 @@ Within the download you'll find the following directories and files :
 API Endpoints :
  <img src="https://github.com/badorhassan/task-management-api/blob/main/route list.png" />
 
-### Authentication
-- `POST /api/auth/login` - User login
-- `POST /api/auth/register` - User registration
-- `GET /api/auth/me` - Get authenticated user
-- `POST /api/auth/logout` - User logout
-- `POST /api/auth/refresh` - Refresh JWT token
+
+
+ ###  Authentication
+•	POST /api/auth/login - Login to get JWT token
+•	POST /api/auth/logout - Logout (invalidate token)
+•	POST /api/auth/refresh - Refresh JWT token
+•	GET /api/auth/me - Get current user info
 
 ### Tasks
-- `GET /api/tasks` - List all tasks (filterable)
-- `POST /api/tasks` - Create a new task
-- `GET /api/tasks/{id}` - Get a specific task
-- `PUT /api/tasks/{id}` - Update a task
-- `DELETE /api/tasks/{id}` - Delete a task
-- `PATCH /api/tasks/{id}/status` - Update task status
-- `GET /api/tasks/{id}/dependencies` - Get task dependencies
+•	GET /api/tasks - Get all tasks (filtered by user role)
+•	POST /api/tasks - Create a new task (managers only)
+•	GET /api/tasks/{id} - Get a specific task
+•	PUT /api/tasks/{id} - Update a task (managers can update all fields, users can only update status)
+•	DELETE /api/tasks/{id} - Delete a task (managers only)
 
-### Users
-- `GET /api/users` - List all users (Admin only)
-- `GET /api/users/{id}` - Get a specific user
-- `GET /api/users/{id}/tasks` - Get tasks assigned to a user
+### Task Dependencies
+•	POST /api/tasks/{id}/dependencies - Add a dependency to a task (managers only)
+•	DELETE /api/tasks/{id}/dependencies - Remove a dependency from a task (managers only)
 
 
 
