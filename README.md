@@ -38,7 +38,7 @@ Within the download you'll find the following directories and files :
 1. **Clone the repository**
  
    git clone https://github.com/badorhassan/task-management-api.git
-   cd task-management
+   - cd task-management
  
 
 2. **Install dependencies**
@@ -61,7 +61,7 @@ Within the download you'll find the following directories and files :
    - DB_PASSWORD=your_password
    - JWT_SECRET=your_jwt_secret_key
    - JWT_EXPIRES_IN=60
-  
+  **  php artisan jwt:secrect
 
 5. **Generate application key**
    
