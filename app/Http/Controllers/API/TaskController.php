@@ -352,7 +352,7 @@ class TaskController extends Controller
             'message' => 'Dependency removed successfully'
         ]);
     }
-     /*** bador
+    
      * Check if a task can be marked as completed based on its dependencies.
      */
     public function canBeCompleted(Task $task)
