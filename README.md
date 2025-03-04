@@ -62,14 +62,16 @@ Within the download you'll find the following directories and files :
    - JWT_SECRET=your_jwt_secret_key
    - JWT_EXPIRES_IN=60
    - 
- **php artisan jwt:secrect**
+ 
 
-5. **Generate application key**
+5. **Generate secrect key & application key**
+   
+   php artisan jwt:secrect
    
    php artisan key:generate
   
 
-6. **Run migrations and seed the database**
+8. **Run migrations and seed the database**
    
    php artisan migrate --seed
   
